@@ -1,0 +1,34 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE2NjEwMjM5ODZ9.R97MsRPp7AJDaguTmLnQZIQP--Cng7awF5bGHdnnBNE
+
+##### Select All
+GET http://localhost:3000/standings.json
+Authorization: Bearer {{jwt}}
+
+##### Select One
+GET http://localhost:3000/standings/1.json
+Authorization: Bearer {{jwt}}
+
+##### Create
+POST http://localhost:3000/standings.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "tournament_id": 3,
+  "user_id": 2
+}
+
+##### Update
+PATCH http://localhost:3000/standings/10.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "games_won": 1,
+  "games_lost": 2,
+  "bracket_position": 14
+}
+
+##### Delete
+DELETE http://localhost:3000/standings/6.json
+Authorization: Bearer {{jwt}}

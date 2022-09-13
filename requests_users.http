@@ -1,0 +1,37 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2NjEwMjI4Mjd9.Wg1V6HLDbn2RjQb3aFNLuHimuA-kkk-irYwL7t04heg
+
+### Select All
+GET http://localhost:3000/users.json
+
+### Get one
+GET http://localhost:3000/users/1.json
+
+### Create user
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "first_name": "user",
+  "last_name": "lastname1",
+  "email": "a@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Update User
+PATCH http://localhost:3000/users/7.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "first_name": "clark",
+  "last_name": "kent",
+  "email": "superman50@example.com",
+  "password": "password"
+}
+
+### Delete User
+DELETE http://localhost:3000/users/7.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+

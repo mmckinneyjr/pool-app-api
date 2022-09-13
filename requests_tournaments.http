@@ -1,0 +1,45 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE2NjEwMjM5ODZ9.R97MsRPp7AJDaguTmLnQZIQP--Cng7awF5bGHdnnBNE
+
+##### Select All
+GET http://localhost:3000/tournaments.json
+Authorization: Bearer {{jwt}}
+
+##### Select One
+GET http://localhost:3000/tournaments/1.json
+Authorization: Bearer {{jwt}}
+
+##### Create
+POST http://localhost:3000/tournaments.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "tournament_name": "Champions Tournament 2",
+  "date": "10/10/2022",
+  "start_time": "10:00 pm",
+  "street_address": "123 main st",
+  "state": "WI",
+  "city": "chicago",
+  "zipcode": "55555",
+  "details": "this is a details blocks"
+}
+
+##### Update
+PATCH http://localhost:3000/tournaments/2.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "tournament_name": "SOmething",
+  "date": "10/10/2022",
+  "start_time": "0",
+  "street_address": "1234",
+  "state": "hello",
+  "city": "password",
+  "zipcode": "password",
+  "details": "password"
+}
+
+##### Delete
+DELETE http://localhost:3000/tournaments/1.json
+Authorization: Bearer {{jwt}}

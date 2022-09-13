@@ -1,0 +1,8 @@
+{
+  id: @standing.id,
+  user_id: @standing.user_id,
+  tournament_id: @standing.tournament_id,
+  bracket_position: @standing.bracket_position,
+  round: @standing.round,
+  win: @standing.win
+}
