@@ -1,1 +1,23 @@
+User.create(first_name: "Bob", last_name: "Smith", email: "bob@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Bruce", last_name: "Wayne", email: "batman@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Clark", last_name: "Kent", email: "superman@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Barry", last_name: "Allen", email: "flash@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Tony", last_name: "Stark", email: "ironman@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Steve", last_name: "Rogers", email: "cptamerica@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Bruce", last_name: "Banner", email: "hulk@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Oswald", last_name: "Cobblept", email: "penguin@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Raven", last_name: "Darkholme", email: "mystique@example.com", password: "password", password_confirmation: "password")
+User.create(first_name: "Peter", last_name: "Parker", email: "spiderman@example.com", password: "password", password_confirmation: "password")
+
+Tournament.create(tournament_name: "Lincoln Hall", street_address: "2424 N Lincoln Ave", state: "IL", city: "Chicago", zipcode: "60614", date: "2022-12-09" start_time: 10:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "Jay Pritzker Pavilion", street_address: "201 E Randolph St", state: "IL", city: "Chicago", zipcode: "60601", date: "2022-11-23" start_time: 14:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "The Hideout", street_address: "1354 W Wabansia Ave", state: "IL", city: "Chicago", zipcode: "60642", date: "2022-12-30" start_time: 12:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "The Riviera Theatre", street_address: "4746 N Racine Ave", state: "IL", city: "Chicago", zipcode: "60640", date: "2022-10-21" start_time: 10:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "The Vic Theatre", street_address: "3145 N Sheffield Ave", state: "IL" city: "Chicago", zipcode: "60657", date: "2022-09-26" start_time: 14:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "Bottom Lounge", street_address: "1375 W Lake St", state: "IL" city: "Chicago", zipcode: "60607", date: "2022-10-31" start_time: 10:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "Epiphany Center for the Arts", street_address: "201 S Ashland Ave", state: "IL" city: "Chicago", zipcode: "60607", date: "2022-11-14" start_time: 22:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "Concord Music Hall", street_address: "2051 N Milwaukee Ave", state: "IL" city: "Chicago", zipcode: "60647", date: "2022-11-25" start_time: 13:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "House of Blues Chicago", street_address: "329 N Dearborn St", state: IL city: "Chicago", zipcode: "60654", date: "2022-12-01" start_time: 15:00, details: "Details about this tournament would go here")
+Tournament.create(tournament_name: "The Metro", street_address: "3730 N Clark St", state: IL city: "Chicago", zipcode: "60613", date: "2022-10-10" start_time: 09:00, details: "Details about this tournament would go here")
+
 
